@@ -40,7 +40,7 @@ public class GameSceneManager : MonoBehaviour
         // 時間が０になった場合もしくはプレイヤーの体力が０になった場合
         // isClearをfalseにしてシーン遷移する
         bool isGameOver = Input.GetKey("joystick button 7") |
-                          TimeCounter._countdownSeconds == 0 |
+                          TimeCounter._countdownSeconds < 0 |
                           PlayerHPBar._currentHp <= 0.001f;
 
         if (isClear && !_isBottomDown)

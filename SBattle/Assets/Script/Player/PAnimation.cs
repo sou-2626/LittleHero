@@ -64,7 +64,5 @@ public class PAnimation : MonoBehaviour
         {
             anim.SetInteger("motion", 0);//reset
         }
-
-
     }
 }
